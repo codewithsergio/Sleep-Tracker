@@ -1,0 +1,113 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--back-purple);
+  color: white;
+  min-height: 100vh;
+  max-width: 800px;
+  margin: auto;
+}
+
+.home h1 {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.home .title-screen {
+  height: 25vh;
+  display: flex;
+  align-items: flex-end;
+  max-width: 600px;
+  margin-bottom: 3rem;
+}
+
+.home #name-span {
+  font-weight: 700;
+}
+
+.home h2 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--light-purple);
+}
+
+.home button {
+  padding: 1rem;
+  border: none;
+  border-radius: 1rem;
+  margin: 0.5rem;
+  width: max-content;
+  font-weight: 600;
+  transition: all ease-in-out 0.2s;
+  font-size: 1rem;
+  box-shadow: 0px 0px 15px -5px white;
+}
+
+.home button:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.home #sleepButton {
+  background-color: var(--dark-purple);
+  color: white;
+}
+
+.home #sleepButton:hover {
+  background-color: var(--light-purple);
+}
+
+.home #wakeButton {
+  background-color: #dbd944;
+  color: black;
+}
+
+.home #wakeButton:hover {
+  background-color: #d9c243;
+}
+
+.home .sleep-record-list {
+  margin: 3rem;
+  margin-bottom: 10vh;
+}
+
+.home .sleep-record-list h2 {
+  margin: 0.5rem;
+}
+
+.home .card {
+  background-color: var(--light-purple);
+  color: var(--white);
+  padding: 0.8rem;
+  border-radius: 1rem;
+  margin: 1rem 0;
+  font-size: 0.9rem;
+  display: flex;
+  width: 90vw;
+  justify-content: space-between;
+  box-shadow: 0px 0px 10px -4px white;
+}
+
+.home .card .card-left-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: max-content;
+}
+
+.home .card .card-date {
+  font-weight: 700;
+  font-size: medium;
+}
+
+.home .card .time-range {
+  font-style: italic;
+}
+
+@media screen and (min-width: 600px) {
+  .home .card {
+    max-width: 600px;
+  }
+}

@@ -1,0 +1,68 @@
+:root {
+  --inner-circle-px: 150px;
+}
+
+.breath-exercise h1 {
+  font-size: 1.4rem;
+  color: var(--white);
+  margin: 3rem;
+}
+
+.breath-exercise {
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.outer-circle {
+  background-color: var(--dark-purple);
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle {
+  position: relative;
+  width: var(--inner-circle-px);
+  height: var(--inner-circle-px);
+  border-radius: 50%;
+  background-color: var(--light-purple);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: width 3s ease-out, height 3s ease-out;
+}
+
+.circle.hold {
+  width: 300px;
+  height: 300px;
+}
+
+.inner-circle {
+  display: flex;
+  flex-direction: column;
+}
+
+.inner-circle h3 {
+  font-size: 1.1rem;
+}
+
+.inner-circle h4 {
+  font-size: 1rem;
+}
+
+.grow {
+  width: 300px;
+  height: 300px;
+}
+
+.shrink {
+  width: var(--inner-circle-px);
+  height: var(--inner-circle-px);
+}

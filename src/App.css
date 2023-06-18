@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
+#root {
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  background-color: #000326;
+}
+
+:root {
+  --light-purple: #4e5ae6;
+  --dark-purple: #1c269c;
+  --white: #e7e7e7;
+  --back-purple: #000326;
+}
